@@ -107,10 +107,8 @@ function buildExpandingFormset(prefix, opts) {
     }
 
     var emptyFormTemplate = document.getElementById(prefix + '-EMPTY_FORM_TEMPLATE');
-    if (emptyFormTemplate.innerText) {
-        emptyFormTemplate = emptyFormTemplate.innerText;
-    } else if (emptyFormTemplate.textContent) {
-        emptyFormTemplate = emptyFormTemplate.textContent;
+    if (emptyFormTemplate.innerHTML) {
+        emptyFormTemplate = emptyFormTemplate.innerHTML;
     }
 
     var add = function() {
