@@ -21,11 +21,9 @@
 
 
 
-<script type="text/django-form-template" id="id_{{ self.formset.prefix }}-EMPTY_FORM_TEMPLATE">
-{% escapescript %}
+<template id="id_{{ self.formset.prefix }}-EMPTY_FORM_TEMPLATE">
 {% include "wagtailadmin/panels/inline_panel_child.html" with child=self.empty_child %}
-{% endescapescript %}
-</script>
+</template>
 
 <p class="add">
     <a class="button bicolor icon icon-plus" id="id_{{ self.formset.prefix }}-ADD">
