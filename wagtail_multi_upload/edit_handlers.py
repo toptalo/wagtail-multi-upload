@@ -13,7 +13,7 @@ class MultipleImagesPanel(InlinePanel):
     
     def __init__(self, relation_name, image_field_name, *args, **kwargs):
         kwargs['relation_name'] = relation_name
-        super().__init__(*args, **kwargs)
+        super(MultipleImagesPanel, self).__init__(*args, **kwargs)
         self.image_field_name = image_field_name
 
     def clone(self):
