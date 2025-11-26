@@ -9,7 +9,7 @@ from django.views.decorators.vary import vary_on_headers
 
 from wagtail.admin.auth import PermissionPolicyChecker
 from wagtail.images import get_image_model
-from wagtail.images.fields import get_allowed_image_extensions
+from wagtail.images.utils import get_allowed_image_extensions
 from wagtail.images.forms import get_image_form
 from wagtail.images.permissions import permission_policy
 from wagtail.search.backends import get_search_backends
